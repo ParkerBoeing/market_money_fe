@@ -6,6 +6,5 @@ class MarketsController < ApplicationController
   def show
     @market = MarketFacade.select_market(params[:id])
     @affiliated_vendors = MarketFacade.affiliated_vendors(params[:id])
-    require 'pry'; binding.pry
   end
 end
