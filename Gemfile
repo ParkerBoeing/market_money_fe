@@ -66,3 +66,11 @@ group :development do
   # gem "spring"
 end
 
+group :test do
+  gem 'rspec-rails', '~> 5.0'
+  gem "webmock"
+  gem "vcr"
+  gem "capybara"
+  gem "launchy"
+  gem "shoulda-matchers"
+end
