@@ -1,0 +1,162 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/322458
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"c2bf3658e26f32c786b6bdaa2a2cf671"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a45c432e-3489-4ece-83bc-e9747e270394
+      X-Runtime:
+      - '0.006909'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.62, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=2.56
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"322458","type":"market","attributes":{"name":"14\u0026U
+        Farmers'' Market","street":"1400 U Street NW ","city":"Washington","county":"District
+        of Columbia","state":"District of Columbia","zip":"20009","lat":"38.9169984","lon":"-77.0320505","vendor_count":1},"relationships":{"vendors":{"data":[{"id":"55823","type":"vendor"}]}}}}'
+  recorded_at: Sun, 10 Sep 2023 23:17:06 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/322458/vendors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"bdaccad93f7285807716ef780f572aa1"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b6eed5cb-bc1a-4414-b654-f41fa40139ff
+      X-Runtime:
+      - '0.018602'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=13.30,
+        instantiation.active_record;dur=0.04, process_action.action_controller;dur=14.04
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"55823","type":"vendor","attributes":{"name":"The Charcuterie
+        Corner","description":"Vendor selling a variety of artisanal cured meats and
+        sausages.","contact_name":"Claudie Langworth III","contact_phone":"1-147-179-9747","credit_accepted":false}}]}'
+  recorded_at: Sun, 10 Sep 2023 23:17:06 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/55823
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"52a3a848e065d8df4195850a9c1f5377"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7eab9968-02e8-4364-8ef7-5664018ba428
+      X-Runtime:
+      - '0.005081'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.37, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=0.80
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"55823","type":"vendor","attributes":{"name":"The Charcuterie
+        Corner","description":"Vendor selling a variety of artisanal cured meats and
+        sausages.","contact_name":"Claudie Langworth III","contact_phone":"1-147-179-9747","credit_accepted":false}}}'
+  recorded_at: Sun, 10 Sep 2023 23:17:06 GMT
+recorded_with: VCR 6.2.0
