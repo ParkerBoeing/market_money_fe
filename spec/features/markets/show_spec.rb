@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe "Markets Index" do
-  describe "discover movies show" do
+RSpec.describe "Market Show" do
+  describe "market show" do
     it "shows each market with relevant information", :vcr do
       visit market_path("322458")
       
