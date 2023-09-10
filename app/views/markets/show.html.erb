@@ -4,5 +4,5 @@
 
 <h3> Affiliated Vendors </h3>
 <% @affiliated_vendors.each do |vendor| %>
- <ul> <%= link_to "#{vendor.name}", vendor_path(vendor) %></ul>
+ <ul> <%= link_to "#{vendor.name}", vendor_path(vendor.id) %></ul>
 <% end %>

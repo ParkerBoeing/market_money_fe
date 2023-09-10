@@ -37,4 +37,15 @@ class MarketFacade
                 id: raw_vendor[:id])
     end
   end
+
+  def self.select_vendor(id)
+    service = MarketService.new
+    raw_vendor = service.select_vendor(id)[:data]
+    Vendor.new(name: raw_vendor[:attributes][:name], 
+              description: raw_vendor[:attributes][:description], 
+              contact_name: raw_vendor[:attributes][:contact_name], 
+              contact_phone: raw_vendor[:attributes][:contact_phone], 
+              credit_accepted: raw_vendor[:attributes][:credit_accepted], 
+              id: raw_vendor[:id])
+  end
 end

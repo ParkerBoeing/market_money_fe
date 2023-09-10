@@ -1,6 +1,6 @@
 class VendorsController < ApplicationController
   
   def show
-    # @vendor = MarketFacade.affiliated_vendors(params[:id])
+    @vendor = MarketFacade.select_vendor(params[:id])
   end
 end
