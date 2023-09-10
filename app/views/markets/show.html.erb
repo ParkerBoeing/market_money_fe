@@ -6,6 +6,5 @@
 <% @affiliated_vendors.each do |vendor| %>
 <div id=<%= vendor.id %>>
  <ul> <%= link_to "#{vendor.name}", vendor_path(vendor.id) %></ul>
- <p> <%= vendor.id %> </p>
 </div>
 <% end %>
