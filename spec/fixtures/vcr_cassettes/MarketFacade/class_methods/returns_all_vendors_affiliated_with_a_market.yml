@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bb4beee1-7200-443b-b6bb-254eca8d6df7
+      - 3267f83d-0488-4f01-82be-c65e1f040c1e
       X-Runtime:
-      - '0.009654'
+      - '0.006606'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=2.28, instantiation.active_record;dur=0.06,
-        process_action.action_controller;dur=3.57
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.37, instantiation.active_record;dur=0.06,
+        process_action.action_controller;dur=2.26
       Transfer-Encoding:
       - chunked
     body:
@@ -52,5 +52,5 @@ http_interactions:
       string: '{"data":[{"id":"55823","type":"vendor","attributes":{"name":"The Charcuterie
         Corner","description":"Vendor selling a variety of artisanal cured meats and
         sausages.","contact_name":"Claudie Langworth III","contact_phone":"1-147-179-9747","credit_accepted":false}}]}'
-  recorded_at: Sun, 10 Sep 2023 22:31:47 GMT
+  recorded_at: Sun, 10 Sep 2023 22:51:25 GMT
 recorded_with: VCR 6.2.0
